@@ -2,6 +2,8 @@
 
 Once going into the last tabs after "More", then in 13.1 this displays as expected and in 13.2 the top of the list is cut off.
 
+To reproduce build this app with Xcode 13.1 and then Xcode 13.2 and compare.
+
 ## Xcode 13.1
 
 <img src="./Xcode 13.1.gif" alt="Xcode 13.1">
