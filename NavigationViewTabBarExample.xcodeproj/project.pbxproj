@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C215E4AE27672696005690D7 /* ContentViewSwiftUIApproach.swift in Sources */ = {isa = PBXBuildFile; fileRef = C215E4AD27672696005690D7 /* ContentViewSwiftUIApproach.swift */; };
+		C287BCC92767218B00BA6973 /* UIKitTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287BCC52767218B00BA6973 /* UIKitTabView.swift */; };
+		C287BCCA2767218B00BA6973 /* TabBarControllerAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287BCC62767218B00BA6973 /* TabBarControllerAccessor.swift */; };
+		C287BCCB2767218B00BA6973 /* TabViewProxyHeightWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287BCC72767218B00BA6973 /* TabViewProxyHeightWrapperView.swift */; };
+		C287BCCC2767218B00BA6973 /* TabBarAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287BCC82767218B00BA6973 /* TabBarAccessor.swift */; };
+		C287BCCF276721F600BA6973 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C287BCCE276721F600BA6973 /* Algorithms */; };
 		C2B726E227669DBA009993AD /* NavigationViewTabBarExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B726E127669DBA009993AD /* NavigationViewTabBarExampleApp.swift */; };
 		C2B726E427669DBA009993AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B726E327669DBA009993AD /* ContentView.swift */; };
 		C2B726E627669DBB009993AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B726E527669DBB009993AD /* Assets.xcassets */; };
@@ -14,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C215E4AD27672696005690D7 /* ContentViewSwiftUIApproach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewSwiftUIApproach.swift; sourceTree = "<group>"; };
+		C287BCC52767218B00BA6973 /* UIKitTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitTabView.swift; sourceTree = "<group>"; };
+		C287BCC62767218B00BA6973 /* TabBarControllerAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarControllerAccessor.swift; sourceTree = "<group>"; };
+		C287BCC72767218B00BA6973 /* TabViewProxyHeightWrapperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewProxyHeightWrapperView.swift; sourceTree = "<group>"; };
+		C287BCC82767218B00BA6973 /* TabBarAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarAccessor.swift; sourceTree = "<group>"; };
 		C2B726DE27669DBA009993AD /* NavigationViewTabBarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationViewTabBarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B726E127669DBA009993AD /* NavigationViewTabBarExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewTabBarExampleApp.swift; sourceTree = "<group>"; };
 		C2B726E327669DBA009993AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +37,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C287BCCF276721F600BA6973 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C287BCC42767212F00BA6973 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C287BCC82767218B00BA6973 /* TabBarAccessor.swift */,
+				C287BCC62767218B00BA6973 /* TabBarControllerAccessor.swift */,
+				C287BCC72767218B00BA6973 /* TabViewProxyHeightWrapperView.swift */,
+				C287BCC52767218B00BA6973 /* UIKitTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		C2B726D527669DBA009993AD = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +74,10 @@
 		C2B726E027669DBA009993AD /* NavigationViewTabBarExample */ = {
 			isa = PBXGroup;
 			children = (
+				C287BCC42767212F00BA6973 /* TabBar */,
 				C2B726E127669DBA009993AD /* NavigationViewTabBarExampleApp.swift */,
 				C2B726E327669DBA009993AD /* ContentView.swift */,
+				C215E4AD27672696005690D7 /* ContentViewSwiftUIApproach.swift */,
 				C2B726E527669DBB009993AD /* Assets.xcassets */,
 				C2B726E727669DBB009993AD /* Preview Content */,
 			);
@@ -83,6 +108,9 @@
 			dependencies = (
 			);
 			name = NavigationViewTabBarExample;
+			packageProductDependencies = (
+				C287BCCE276721F600BA6973 /* Algorithms */,
+			);
 			productName = NavigationViewTabBarExample;
 			productReference = C2B726DE27669DBA009993AD /* NavigationViewTabBarExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +139,9 @@
 				Base,
 			);
 			mainGroup = C2B726D527669DBA009993AD;
+			packageReferences = (
+				C287BCCD276721F600BA6973 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = C2B726DF27669DBA009993AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C287BCCA2767218B00BA6973 /* TabBarControllerAccessor.swift in Sources */,
 				C2B726E427669DBA009993AD /* ContentView.swift in Sources */,
+				C287BCC92767218B00BA6973 /* UIKitTabView.swift in Sources */,
+				C287BCCB2767218B00BA6973 /* TabViewProxyHeightWrapperView.swift in Sources */,
+				C287BCCC2767218B00BA6973 /* TabBarAccessor.swift in Sources */,
 				C2B726E227669DBA009993AD /* NavigationViewTabBarExampleApp.swift in Sources */,
+				C215E4AE27672696005690D7 /* ContentViewSwiftUIApproach.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +377,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C287BCCD276721F600BA6973 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C287BCCE276721F600BA6973 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C287BCCD276721F600BA6973 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C2B726D627669DBA009993AD /* Project object */;
 }
